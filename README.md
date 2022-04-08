@@ -12,7 +12,7 @@ usefull and speed to debugging without use printf for each debug to want.
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/marc-mosca/get_next_line.git debugger-marc-mosca
+   git clone https://github.com/marc-mosca/debugger.git debugger-marc-mosca
    ```
 2. Go to the directory
    ```sh
