@@ -9,6 +9,15 @@ This project is a simple macro for debugging your C/C++ code. You just have to a
 git clone https://github.com/marc-mosca/debugger.git
 ```
 2. Add file(s) to your project and include them in header(s) file(s).
+3. To use macro, you called **debug()**, **sdebug()** or **idebug()** in your code. For exemple:
+```c
+#include "debug.h"
+
+int main(void) {
+	sdebug("String debug function");
+	return 0;
+}
+```
 
 #### 👤 Contributors
 

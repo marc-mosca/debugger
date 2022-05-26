@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   debug.cpp                                          :+:      :+:    :+:   */
+/*   debug.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmosca <mmosca@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/11 22:07:22 by mmosca            #+#    #+#             */
-/*   Updated: 2022/05/26 15:24:05 by mmosca           ###   ########.fr       */
+/*   Created: 2022/05/26 15:28:37 by mmosca            #+#    #+#             */
+/*   Updated: 2022/05/26 15:29:54 by mmosca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#ifndef DEBUG_H
+# define DEBUG_H
 
-#define debug printDebug(__FILE__, __LINE__, "Wow! It's a default debug message.")
-#define vdebug(x) printDebug(__FILE__, __LINE__, x)
+# include <stdio.h>
 
-#define END "\033[0m"
-#define PURPLE "\033[1;35m"
+# define debug() dprintf(2, "\033[1;35m%s:%d\033[0m %s\n", __FILE__, __LINE__, "This is a debug message.")
+# define sdebug(x) dprintf(2, "\033[1;35m%s:%d\033[0m %s\n", __FILE__, __LINE__, x)
+# define idebug(x) dprintf(2, "\033[1;35m%s:%d\033[0m %d\n", __FILE__, __LINE__, x)
 
-template<typename T>
-void	printDebug(std::string file, int32_t line, T x) {
-	std::cout << PURPLE << file << ":" << line << END << " " << x << std::endl;
-}
+#endif
