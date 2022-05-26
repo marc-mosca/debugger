@@ -1,29 +1,22 @@
-<!-- About the project -->
-## About the project
+### C/C++ Debugger
 
-This small project is macros for debugging your code. Use it for print value of
-a variable (or a default message) into a loop or in a condition... It's very
-usefull and speed to debugging without use printf for each debug to want.
+This project is a simple macro for debugging your C/C++ code. You just have to add the file(s) to your project and include them in your header files to make it work.
 
-<!-- Getting started -->
-## Getting Started
+#### ⏳ Installation & running
 
-### Installation
+1. In the first time, clone the repository
+```shell
+git clone https://github.com/marc-mosca/debugger.git
+```
+2. Add file(s) to your project and include them in header(s) file(s).
 
-1. Clone the repository
-   ```sh
-   git clone https://github.com/marc-mosca/debugger.git debugger-marc-mosca
-   ```
-2. Go to the directory
-   ```sh
-   cd debugger-marc-mosca
-   ```
+#### 👤 Contributors
 
-<!-- Contact -->
-## Contact
+- [Marc Mosca](https://github.com/marc-mosca/)
 
-Marc Mosca - mmosca@student.42lyon.fr
+#### 📫 How to reach me
 
-Project Link: [https://github.com/marc-mosca/debugger](https://github.com/marc-mosca/debugger)
-
-Discord:  Mαяc ☥#6207
+- Linkedin : [https://www.linkedin.com/in/marc-mosca](https://www.linkedin.com/in/marc-mosca-59b2b7204/)
+- Intranet 42 : https://profile.intra.42.fr/users/mmosca
+- Github : https://github.com/marc-mosca
+- Email : mmosca@student.42lyon.fr
