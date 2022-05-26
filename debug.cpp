@@ -6,7 +6,7 @@
 /*   By: mmosca <mmosca@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/11 22:07:22 by mmosca            #+#    #+#             */
-/*   Updated: 2022/03/11 22:10:55 by mmosca           ###   ########lyon.fr   */
+/*   Updated: 2022/05/26 15:24:05 by mmosca           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,6 @@
 #define PURPLE "\033[1;35m"
 
 template<typename T>
-void
-printDebug(std::string file, int32_t line, T x)
-{
-	std::cout << PURPLE << file << ":" << line << END << " ";
-	std::cout << x << std::endl;
+void	printDebug(std::string file, int32_t line, T x) {
+	std::cout << PURPLE << file << ":" << line << END << " " << x << std::endl;
 }
