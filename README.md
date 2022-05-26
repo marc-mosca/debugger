@@ -14,7 +14,9 @@ git clone https://github.com/marc-mosca/debugger.git
 #include "debug.h"
 
 int main(void) {
+	debug();
 	sdebug("String debug function");
+	idebug(42);
 	return 0;
 }
 ```
